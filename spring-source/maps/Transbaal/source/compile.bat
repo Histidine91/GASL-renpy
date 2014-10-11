@@ -1,0 +1,1 @@
+MapConv -i -c 0 -x -299 -n -300 -o Transbaal.smf -t diffuse.png -a heightmap.png -m metalmap.png

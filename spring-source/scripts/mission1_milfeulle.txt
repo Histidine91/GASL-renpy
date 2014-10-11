@@ -1,0 +1,77 @@
+[GAME]
+{
+	MapName=Transbaal;
+	StartMetal=1000;
+	StartEnergy=1000;
+	StartposType=3;
+	GameMode=0;
+	GameType=Starcrossed Lovers Episode 1 - An Unknown Menace (Milfeulle);
+	LimitDGun=0;
+	DiminishingMMs=0;
+	GhostedBuildings=1;
+	HostIP=127.0.0.1;
+	HostPort=8452;
+	IsHost=1;
+	MyPlayerNum=0;
+	MyPlayerName=Angel Wing;
+	NumPlayers=1;
+	NumTeams=2;
+	NumUsers=2;
+	NumRestrictions=0;
+	MaxSpeed=20;
+	MinSpeed=0.1;
+	[MODOPTIONS]
+	{
+		enableabilities=0;
+		partner=%(partner)s;
+		morale1=%(morale1)s;
+		morale2=%(morale2)s;
+		morale3=%(morale3)s;
+		morale4=%(morale4)s;
+		morale5=%(morale5)s;
+		morale6=%(morale6)s;
+	}
+	[PLAYER0]
+	{
+		Name=Angel Wing;
+		Spectator=0;
+		Team=0;
+	}
+	[AI1]
+	{
+		Name=Aliens;
+		ShortName=NullAI;
+		Team=1;
+		IsFromDemo=0;
+		Host=0;
+		[Options] {}
+	}
+	[TEAM0]
+	{
+		TeamLeader=0;
+		AllyTeam=0;
+		RGBColor=0.02518686 0.1169707 0.9301109;
+		Side=Faction;
+		Handicap=0;
+		StartPosX=0;
+		StartPosZ=0;
+	}
+	[TEAM1]
+	{
+		TeamLeader=0;
+		AllyTeam=1;
+		RGBColor=1 0 0;
+		Side=Faction;
+		Handicap=0;
+		StartPosX=0;
+		StartPosZ=0;
+	}
+	[ALLYTEAM0]
+	{
+		NumAllies=0;
+	}
+	[ALLYTEAM1]
+	{
+		NumAllies=0;
+	}
+}

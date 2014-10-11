@@ -1,0 +1,1194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mission xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" z:Type="CMissionLib.Mission" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">
+  <Author z:Id="2">KingRaptor</Author>
+  <ContentFolderPath z:Id="3">J:\Games\Spring\Missions\My Missions\gasl\mission1</ContentFolderPath>
+  <Counters xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="4">
+    <d2p1:items z:Id="5" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+      <d2p1:_items z:Id="6" z:Size="0" />
+      <d2p1:_size>0</d2p1:_size>
+      <d2p1:_version>0</d2p1:_version>
+    </d2p1:items>
+    <d2p1:_monitor xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="7">
+      <d3p1:_busyCount>0</d3p1:_busyCount>
+    </d2p1:_monitor>
+  </Counters>
+  <CustomModOptions z:Id="8">enableabilities=0;</CustomModOptions>
+  <Description z:Id="9">The peace in the Transbaal system is shattered by the sudden emergence of an unknown alien fleet.</Description>
+  <DescriptionStory z:Id="10"></DescriptionStory>
+  <DisabledGadgets xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="11">
+    <d2p1:items z:Id="12" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+      <d2p1:_items z:Id="13" z:Size="4">
+        <d2p1:string z:Id="14">game_over.lua</d2p1:string>
+        <d2p1:string z:Id="15">awards.lua</d2p1:string>
+        <d2p1:string i:nil="true" />
+        <d2p1:string i:nil="true" />
+      </d2p1:_items>
+      <d2p1:_size>2</d2p1:_size>
+      <d2p1:_version>4</d2p1:_version>
+    </d2p1:items>
+    <d2p1:_monitor xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="16">
+      <d3p1:_busyCount>0</d3p1:_busyCount>
+    </d2p1:_monitor>
+  </DisabledGadgets>
+  <DisabledUnits xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="17">
+    <d2p1:items z:Id="18" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+      <d2p1:_items z:Ref="6" i:nil="true" />
+      <d2p1:_size>0</d2p1:_size>
+      <d2p1:_version>0</d2p1:_version>
+    </d2p1:items>
+    <d2p1:_monitor xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="19">
+      <d3p1:_busyCount>0</d3p1:_busyCount>
+    </d2p1:_monitor>
+  </DisabledUnits>
+  <DisabledWidgets xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="20">
+    <d2p1:items z:Id="21" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+      <d2p1:_items z:Id="22" z:Size="8">
+        <d2p1:string z:Id="23">gui_pauseScreen.lua</d2p1:string>
+        <d2p1:string z:Id="24">cmd_unit_mover.lua</d2p1:string>
+        <d2p1:string z:Id="25">init_startup_info_selector.lua</d2p1:string>
+        <d2p1:string z:Id="26">gui_center_n_select.lua</d2p1:string>
+        <d2p1:string z:Id="27">gui_take_remind.lua</d2p1:string>
+        <d2p1:string z:Id="28">gui_startup_info_selector.lua</d2p1:string>
+        <d2p1:string z:Id="29">gui_local_colors.lua</d2p1:string>
+        <d2p1:string z:Id="30">spring_direct_launch.lua</d2p1:string>
+      </d2p1:_items>
+      <d2p1:_size>8</d2p1:_size>
+      <d2p1:_version>8</d2p1:_version>
+    </d2p1:items>
+    <d2p1:_monitor xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="31">
+      <d3p1:_busyCount>0</d3p1:_busyCount>
+    </d2p1:_monitor>
+  </DisabledWidgets>
+  <ImagePath i:nil="true" />
+  <MapName z:Id="32">Transbaal</MapName>
+  <MaxUnits>5000</MaxUnits>
+  <ModName z:Id="33">Galaxy Angel: Starcrossed Lovers v0.03</ModName>
+  <Name z:Id="34">Starcrossed Lovers Episode 1 - An Unknown Menace (Milfeulle)</Name>
+  <Players z:Id="35">
+    <items z:Id="36" z:Type="System.Collections.Generic.List`1[[CMissionLib.Player, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+      <_items z:Id="37" z:Size="4">
+        <Player z:Id="38">
+          <AIDll z:Id="39">NullAI</AIDll>
+          <AIVersion z:Id="40">0.1</AIVersion>
+          <Alliance z:Id="41">Alliance 1</Alliance>
+          <Color xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>247</d6p1:B>
+            <d6p1:G>96</d6p1:G>
+            <d6p1:R>44</d6p1:R>
+            <d6p1:ScA>1</d6p1:ScA>
+            <d6p1:ScB>0.9301109</d6p1:ScB>
+            <d6p1:ScG>0.116970666</d6p1:ScG>
+            <d6p1:ScR>0.02518686</d6p1:ScR>
+          </Color>
+          <ColorBrush xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Windows.Media" z:Id="42">
+            <d6p1:Opacity>1</d6p1:Opacity>
+            <d6p1:RelativeTransform z:Id="43" z:Type="System.Windows.Media.MatrixTransform" z:Assembly="PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+              <d6p1:Matrix>
+                <d6p1:_m11>1</d6p1:_m11>
+                <d6p1:_m12>0</d6p1:_m12>
+                <d6p1:_m21>0</d6p1:_m21>
+                <d6p1:_m22>1</d6p1:_m22>
+                <d6p1:_offsetX>0</d6p1:_offsetX>
+                <d6p1:_offsetY>0</d6p1:_offsetY>
+                <d6p1:_padding>0</d6p1:_padding>
+                <d6p1:_type>TRANSFORM_IS_IDENTITY</d6p1:_type>
+              </d6p1:Matrix>
+            </d6p1:RelativeTransform>
+            <d6p1:Transform z:Ref="43" i:nil="true" />
+            <d6p1:Color>
+              <d6p1:A>255</d6p1:A>
+              <d6p1:B>247</d6p1:B>
+              <d6p1:G>96</d6p1:G>
+              <d6p1:R>44</d6p1:R>
+              <d6p1:ScA>1</d6p1:ScA>
+              <d6p1:ScB>0.9301109</d6p1:ScB>
+              <d6p1:ScG>0.116970666</d6p1:ScG>
+              <d6p1:ScR>0.02518686</d6p1:ScR>
+            </d6p1:Color>
+          </ColorBrush>
+          <IsHuman>true</IsHuman>
+          <IsRequired>true</IsRequired>
+          <Name z:Id="44">Angel Wing</Name>
+        </Player>
+        <Player z:Id="45">
+          <AIDll z:Ref="39" i:nil="true" />
+          <AIVersion z:Ref="40" i:nil="true" />
+          <Alliance z:Id="46">Alliance 2</Alliance>
+          <Color xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+            <d6p1:ScA>1</d6p1:ScA>
+            <d6p1:ScB>0</d6p1:ScB>
+            <d6p1:ScG>0</d6p1:ScG>
+            <d6p1:ScR>1</d6p1:ScR>
+          </Color>
+          <ColorBrush xmlns:d6p1="http://schemas.datacontract.org/2004/07/System.Windows.Media" z:Id="47">
+            <d6p1:Opacity>1</d6p1:Opacity>
+            <d6p1:RelativeTransform z:Ref="43" i:nil="true" />
+            <d6p1:Transform z:Ref="43" i:nil="true" />
+            <d6p1:Color>
+              <d6p1:A>255</d6p1:A>
+              <d6p1:B>0</d6p1:B>
+              <d6p1:G>0</d6p1:G>
+              <d6p1:R>255</d6p1:R>
+              <d6p1:ScA>1</d6p1:ScA>
+              <d6p1:ScB>0</d6p1:ScB>
+              <d6p1:ScG>0</d6p1:ScG>
+              <d6p1:ScR>1</d6p1:ScR>
+            </d6p1:Color>
+          </ColorBrush>
+          <IsHuman>false</IsHuman>
+          <IsRequired>false</IsRequired>
+          <Name z:Id="48">Aliens</Name>
+        </Player>
+        <Player i:nil="true" />
+        <Player i:nil="true" />
+      </_items>
+      <_size>2</_size>
+      <_version>2</_version>
+    </items>
+    <_monitor xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="49">
+      <d3p1:_busyCount>0</d3p1:_busyCount>
+    </_monitor>
+  </Players>
+  <RapidTag z:Ref="10" i:nil="true" />
+  <Regions z:Id="50">
+    <items z:Id="51" z:Type="System.Collections.Generic.List`1[[CMissionLib.Region, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+      <_items z:Id="52" z:Size="4">
+        <Region z:Id="53">
+          <Areas z:Id="54">
+            <items z:Id="55" z:Type="System.Collections.Generic.List`1[[CMissionLib.Area, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="56" z:Size="0" />
+              <_size>0</_size>
+              <_version>0</_version>
+            </items>
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="57">
+              <d7p1:_busyCount>0</d7p1:_busyCount>
+            </_monitor>
+          </Areas>
+          <Name z:Id="58">Region 1</Name>
+        </Region>
+        <Region i:nil="true" />
+        <Region i:nil="true" />
+        <Region i:nil="true" />
+      </_items>
+      <_size>1</_size>
+      <_version>1</_version>
+    </items>
+    <_monitor xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="59">
+      <d3p1:_busyCount>0</d3p1:_busyCount>
+    </_monitor>
+  </Regions>
+  <ScoringMethod z:Ref="10" i:nil="true" />
+  <StartingEnergy>1000</StartingEnergy>
+  <StartingMetal>1000</StartingMetal>
+  <StartingPlayer z:Ref="38" i:nil="true" />
+  <Triggers z:Id="60">
+    <items z:Id="61" z:Type="System.Collections.Generic.List`1[[CMissionLib.Trigger, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+      <_items z:Id="62" z:Size="8">
+        <Trigger z:Id="63">
+          <Enabled>true</Enabled>
+          <Folder i:nil="true" />
+          <IsExpanded>true</IsExpanded>
+          <Logic z:Id="64">
+            <items z:Id="65" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="66" z:Size="8">
+                <TriggerLogic z:Id="67" z:Type="CMissionLib.Actions.CreateUnitsAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="68">Create Units</Name>
+                  <CEG z:Ref="10" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
+                  <Units xmlns:d10p1="http://schemas.datacontract.org/2004/07/CMissionLib" z:Id="69" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">
+                    <d10p1:items z:Id="70" z:Type="System.Collections.Generic.List`1[[CMissionLib.UnitStartInfo, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+                      <d10p1:_items z:Id="71" z:Size="32">
+                        <d10p1:UnitStartInfo z:Id="72">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>1003</d14p1:_x>
+                            <d14p1:_y>956</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>1003</d10p1:X>
+                          <d10p1:Y>956</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="73">
+                            <d14p1:items z:Id="74" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Id="75" z:Size="4">
+                                <d14p1:string z:Id="76">Elsior</d14p1:string>
+                                <d14p1:string i:nil="true" />
+                                <d14p1:string i:nil="true" />
+                                <d14p1:string i:nil="true" />
+                              </d14p1:_items>
+                              <d14p1:_size>1</d14p1:_size>
+                              <d14p1:_version>1</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="77">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>305.7385670507615</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="38" i:nil="true" />
+                          <d10p1:UnitDefName z:Id="78">placeholdersior</d10p1:UnitDefName>
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="79">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>387</d14p1:_x>
+                            <d14p1:_y>184</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>387</d10p1:X>
+                          <d10p1:Y>184</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="80">
+                            <d14p1:items z:Id="81" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Ref="6" i:nil="true" />
+                              <d14p1:_size>0</d14p1:_size>
+                              <d14p1:_version>0</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="82">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>125.17028801479881</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="45" i:nil="true" />
+                          <d10p1:UnitDefName z:Id="83">enclavestar</d10p1:UnitDefName>
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="84">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>277</d14p1:_x>
+                            <d14p1:_y>459</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>277</d10p1:X>
+                          <d10p1:Y>459</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="85">
+                            <d14p1:items z:Id="86" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Ref="6" i:nil="true" />
+                              <d14p1:_size>0</d14p1:_size>
+                              <d14p1:_version>0</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="87">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>130.21695739224668</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="45" i:nil="true" />
+                          <d10p1:UnitDefName z:Ref="83" i:nil="true" />
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="88">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>357</d14p1:_x>
+                            <d14p1:_y>473</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>357</d10p1:X>
+                          <d10p1:Y>473</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="89">
+                            <d14p1:items z:Id="90" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Ref="6" i:nil="true" />
+                              <d14p1:_size>0</d14p1:_size>
+                              <d14p1:_version>0</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="91">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>136.79665301972159</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="45" i:nil="true" />
+                          <d10p1:UnitDefName z:Id="92">yngcommando</d10p1:UnitDefName>
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="93">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>340</d14p1:_x>
+                            <d14p1:_y>501</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>340</d10p1:X>
+                          <d10p1:Y>501</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="94">
+                            <d14p1:items z:Id="95" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Ref="6" i:nil="true" />
+                              <d14p1:_size>0</d14p1:_size>
+                              <d14p1:_version>0</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="96">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>126.91314510427898</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="45" i:nil="true" />
+                          <d10p1:UnitDefName z:Ref="92" i:nil="true" />
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="97">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>320</d14p1:_x>
+                            <d14p1:_y>522</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>320</d10p1:X>
+                          <d10p1:Y>522</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="98">
+                            <d14p1:items z:Id="99" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Ref="6" i:nil="true" />
+                              <d14p1:_size>0</d14p1:_size>
+                              <d14p1:_version>0</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="100">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>127.1507574324864</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="45" i:nil="true" />
+                          <d10p1:UnitDefName z:Ref="92" i:nil="true" />
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="101">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>325</d14p1:_x>
+                            <d14p1:_y>472</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>325</d10p1:X>
+                          <d10p1:Y>472</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="102">
+                            <d14p1:items z:Id="103" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Ref="6" i:nil="true" />
+                              <d14p1:_size>0</d14p1:_size>
+                              <d14p1:_version>0</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="104">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>132.55925810931103</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="45" i:nil="true" />
+                          <d10p1:UnitDefName z:Id="105">yngtiger</d10p1:UnitDefName>
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="106">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>305</d14p1:_x>
+                            <d14p1:_y>492</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>305</d10p1:X>
+                          <d10p1:Y>492</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="107">
+                            <d14p1:items z:Id="108" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Ref="6" i:nil="true" />
+                              <d14p1:_size>0</d14p1:_size>
+                              <d14p1:_version>0</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="109">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>126.03358344098992</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="45" i:nil="true" />
+                          <d10p1:UnitDefName z:Ref="105" i:nil="true" />
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="110">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>430</d14p1:_x>
+                            <d14p1:_y>249</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>430</d10p1:X>
+                          <d10p1:Y>249</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="111">
+                            <d14p1:items z:Id="112" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Ref="6" i:nil="true" />
+                              <d14p1:_size>0</d14p1:_size>
+                              <d14p1:_version>0</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="113">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>120.31573176799225</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="45" i:nil="true" />
+                          <d10p1:UnitDefName z:Ref="92" i:nil="true" />
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="114">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>452</d14p1:_x>
+                            <d14p1:_y>223</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>452</d10p1:X>
+                          <d10p1:Y>223</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="115">
+                            <d14p1:items z:Id="116" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Ref="6" i:nil="true" />
+                              <d14p1:_size>0</d14p1:_size>
+                              <d14p1:_version>0</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="117">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>120.8770689047347</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="45" i:nil="true" />
+                          <d10p1:UnitDefName z:Ref="92" i:nil="true" />
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="118">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>470</d14p1:_x>
+                            <d14p1:_y>198</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>470</d10p1:X>
+                          <d10p1:Y>198</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="119">
+                            <d14p1:items z:Id="120" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Ref="6" i:nil="true" />
+                              <d14p1:_size>0</d14p1:_size>
+                              <d14p1:_version>0</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="121">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>123.38960434044374</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="45" i:nil="true" />
+                          <d10p1:UnitDefName z:Ref="92" i:nil="true" />
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="122">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>433</d14p1:_x>
+                            <d14p1:_y>191</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>433</d10p1:X>
+                          <d10p1:Y>191</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="123">
+                            <d14p1:items z:Id="124" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Ref="6" i:nil="true" />
+                              <d14p1:_size>0</d14p1:_size>
+                              <d14p1:_version>0</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="125">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>140.40234122094958</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="45" i:nil="true" />
+                          <d10p1:UnitDefName z:Ref="105" i:nil="true" />
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="126">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>408</d14p1:_x>
+                            <d14p1:_y>218</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>408</d10p1:X>
+                          <d10p1:Y>218</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="127">
+                            <d14p1:items z:Id="128" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Ref="6" i:nil="true" />
+                              <d14p1:_size>0</d14p1:_size>
+                              <d14p1:_version>0</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="129">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>127.15323518276006</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="45" i:nil="true" />
+                          <d10p1:UnitDefName z:Ref="105" i:nil="true" />
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="130">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>895</d14p1:_x>
+                            <d14p1:_y>869</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>895</d10p1:X>
+                          <d10p1:Y>869</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="131">
+                            <d14p1:items z:Id="132" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Id="133" z:Size="4">
+                                <d14p1:string z:Id="134">Lucky Star</d14p1:string>
+                                <d14p1:string i:nil="true" />
+                                <d14p1:string i:nil="true" />
+                                <d14p1:string i:nil="true" />
+                              </d14p1:_items>
+                              <d14p1:_size>1</d14p1:_size>
+                              <d14p1:_version>1</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="135">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>306.81586437500897</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="38" i:nil="true" />
+                          <d10p1:UnitDefName z:Id="136">luckystar</d10p1:UnitDefName>
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="137">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>913</d14p1:_x>
+                            <d14p1:_y>954</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>913</d10p1:X>
+                          <d10p1:Y>954</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="138">
+                            <d14p1:items z:Id="139" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Id="140" z:Size="4">
+                                <d14p1:string z:Id="141">Kung-fu Fighter</d14p1:string>
+                                <d14p1:string i:nil="true" />
+                                <d14p1:string i:nil="true" />
+                                <d14p1:string i:nil="true" />
+                              </d14p1:_items>
+                              <d14p1:_size>1</d14p1:_size>
+                              <d14p1:_version>1</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="142">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>304.45556080097941</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="38" i:nil="true" />
+                          <d10p1:UnitDefName z:Id="143">kungfufighter</d10p1:UnitDefName>
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo z:Id="144">
+                          <d10p1:Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows">
+                            <d14p1:_x>982</d14p1:_x>
+                            <d14p1:_y>864</d14p1:_y>
+                          </d10p1:Point>
+                          <d10p1:X>982</d10p1:X>
+                          <d10p1:Y>864</d10p1:Y>
+                          <d10p1:Groups xmlns:d14p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="145">
+                            <d14p1:items z:Id="146" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                              <d14p1:_items z:Id="147" z:Size="4">
+                                <d14p1:string z:Id="148">Happy Trigger</d14p1:string>
+                                <d14p1:string i:nil="true" />
+                                <d14p1:string i:nil="true" />
+                                <d14p1:string i:nil="true" />
+                              </d14p1:_items>
+                              <d14p1:_size>1</d14p1:_size>
+                              <d14p1:_version>1</d14p1:_version>
+                            </d14p1:items>
+                            <d14p1:_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="149">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </d14p1:_monitor>
+                          </d10p1:Groups>
+                          <d10p1:Heading>302.06488029996569</d10p1:Heading>
+                          <d10p1:IsGhost>false</d10p1:IsGhost>
+                          <d10p1:Player z:Ref="38" i:nil="true" />
+                          <d10p1:UnitDefName z:Id="150">happytrigger</d10p1:UnitDefName>
+                        </d10p1:UnitStartInfo>
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                        <d10p1:UnitStartInfo i:nil="true" />
+                      </d10p1:_items>
+                      <d10p1:_size>16</d10p1:_size>
+                      <d10p1:_version>20</d10p1:_version>
+                    </d10p1:items>
+                    <d10p1:_monitor xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="151">
+                      <d11p1:_busyCount>0</d11p1:_busyCount>
+                    </d10p1:_monitor>
+                  </Units>
+                  <UseOrbitalDrop xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</UseOrbitalDrop>
+                </TriggerLogic>
+                <TriggerLogic z:Id="152" z:Type="CMissionLib.Conditions.GamePreloadCondition" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="153">Game Preload</Name>
+                </TriggerLogic>
+                <TriggerLogic z:Id="154" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="155">Custom Action (Alternate)</Name>
+                  <CodeStr z:Id="156" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">GG.SuspendCombat()
+
+local elsiorID = GG.mission.FindUnitInGroup("Elsior")
+Spring.SetGameRulesParam("elsiorUnitID", elsiorID)
+
+local units = Spring.GetTeamUnits(0)
+for i=1,#units do
+  local unitID = units[i]
+  GG.FlightControl.SetUnitHeading(unitID, math.rad(-135))
+  if unitID ~= elsiorID then
+    local _,_,_,x,y,z = Spring.GetUnitPosition(unitID, true)
+    GG.FlightControl.SetUnitPosition(unitID, x, y +math.random(25,150), z)
+  end
+end
+
+units = Spring.GetTeamUnits(1)
+for i=1,#units do
+  local unitID = units[i]
+  GG.FlightControl.SetUnitHeading(unitID, math.rad(45))
+  local _,_,_,x,y,z = Spring.GetUnitPosition(unitID, true)
+  GG.FlightControl.SetUnitPosition(unitID, x, y +math.random(-50, 150), z)
+end</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="157" z:Type="CMissionLib.Actions.AddObjectiveAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="158">Add Objective</Name>
+                  <Description z:Id="159" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">The alien fleet is confirmed hostile. Destroy all enemy vessels in the operation area.</Description>
+                  <GroupTarget i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
+                  <ID z:Id="160" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">destroyEnemy</ID>
+                  <Title z:Id="161" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Destroy all enemies</Title>
+                  <X xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</X>
+                  <Y xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Y>
+                </TriggerLogic>
+                <TriggerLogic z:Id="162" z:Type="CMissionLib.Actions.AddObjectiveAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="158" i:nil="true" />
+                  <Description z:Id="163" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">The Elsior is key to the Angel Wing's operations. Protect it at all costs.</Description>
+                  <GroupTarget i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
+                  <ID z:Id="164" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">protectElsior</ID>
+                  <Title z:Id="165" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Protect the Elsior</Title>
+                  <X xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</X>
+                  <Y xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Y>
+                </TriggerLogic>
+                <TriggerLogic z:Id="166" z:Type="CMissionLib.Actions.FadeOutAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="167">Fade Out</Name>
+                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Instant>
+                </TriggerLogic>
+                <TriggerLogic z:Id="168" z:Type="CMissionLib.Actions.EnterCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="169">Enter Cutscene</Name>
+                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Instant>
+                </TriggerLogic>
+                <TriggerLogic i:nil="true" />
+              </_items>
+              <_size>7</_size>
+              <_version>9</_version>
+            </items>
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="170">
+              <d7p1:_busyCount>0</d7p1:_busyCount>
+            </_monitor>
+          </Logic>
+          <MaxOccurrences>1</MaxOccurrences>
+          <Name z:Id="171">Initialization</Name>
+          <Probability>1</Probability>
+        </Trigger>
+        <Trigger z:Id="172">
+          <Enabled>true</Enabled>
+          <Folder i:nil="true" />
+          <IsExpanded>true</IsExpanded>
+          <Logic z:Id="173">
+            <items z:Id="174" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="175" z:Size="32">
+                <TriggerLogic z:Id="176" z:Type="CMissionLib.Conditions.GameStartedCondition" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="177">Game Starts</Name>
+                </TriggerLogic>
+                <TriggerLogic z:Id="178" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="179">Beauty Shot</Name>
+                  <Group z:Ref="76" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
+                  <MaxCamOffset xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</MaxCamOffset>
+                  <MaxDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">200</MaxDistance>
+                  <MaxHeading xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">30</MaxHeading>
+                  <MaxPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">15</MaxPitch>
+                  <MinDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">150</MinDistance>
+                  <MinHeading xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">15</MinHeading>
+                  <MinPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">-10</MinPitch>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="180" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="181">Wait</Name>
+                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">30</Frames>
+                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.016666666666666666</Minutes>
+                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">1</Seconds>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT1S</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="182" z:Type="CMissionLib.Actions.FadeInAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="183">Fade In</Name>
+                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
+                </TriggerLogic>
+                <TriggerLogic z:Id="184" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="155" i:nil="true" />
+                  <CodeStr z:Id="185" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StartTrack("sounds/music/Time to Fight.ogg")
+
+local string = "Remember, we know little about these aliens besides the fact that they're armed and dangerous. Please be careful out there."
+WG.AddConvo(string, 12, "LuaUI/Images/portraits/tact_serious.png", nil, 8*30)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="186" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="181" i:nil="true" />
+                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">240</Frames>
+                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.13333333333333333</Minutes>
+                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">8</Seconds>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT8S</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="187" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="179" i:nil="true" />
+                  <Group z:Ref="134" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
+                  <MaxCamOffset xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</MaxCamOffset>
+                  <MaxDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">200</MaxDistance>
+                  <MaxHeading xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">60</MaxHeading>
+                  <MaxPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">15</MaxPitch>
+                  <MinDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">150</MinDistance>
+                  <MinHeading xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">45</MinHeading>
+                  <MinPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">-10</MinPitch>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="188" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="155" i:nil="true" />
+                  <CodeStr z:Id="189" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local string = "Don't worry, Tact! We'll protect you and the Elsior with everything we've got!"
+WG.AddConvo(string, 12, "LuaUI/Images/portraits/milfeulle_happy.png", nil, 6*30)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="190" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="181" i:nil="true" />
+                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">180</Frames>
+                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.1</Minutes>
+                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">6</Seconds>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT6S</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="191" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="179" i:nil="true" />
+                  <Group z:Ref="141" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
+                  <MaxCamOffset xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</MaxCamOffset>
+                  <MaxDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">200</MaxDistance>
+                  <MaxHeading xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">60</MaxHeading>
+                  <MaxPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">15</MaxPitch>
+                  <MinDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">150</MinDistance>
+                  <MinHeading xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">15</MinHeading>
+                  <MinPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">-10</MinPitch>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="192" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="155" i:nil="true" />
+                  <CodeStr z:Id="193" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local string = "Do these aliens think we're afraid of them?"
+WG.AddConvo(string, 12, "LuaUI/Images/portraits/ranpha_serious.png", nil, 5*30)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="194" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="181" i:nil="true" />
+                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">150</Frames>
+                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.083333333333333329</Minutes>
+                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">5</Seconds>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT5S</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="195" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="179" i:nil="true" />
+                  <Group z:Ref="148" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
+                  <MaxCamOffset xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">10</MaxCamOffset>
+                  <MaxDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">200</MaxDistance>
+                  <MaxHeading xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">60</MaxHeading>
+                  <MaxPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">15</MaxPitch>
+                  <MinDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">150</MinDistance>
+                  <MinHeading xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">45</MinHeading>
+                  <MinPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">-10</MinPitch>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="196" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="155" i:nil="true" />
+                  <CodeStr z:Id="197" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local string = "We won't back down from anyone who threatens the people we've sworn to protect."
+WG.AddConvo(string, 12, "LuaUI/Images/portraits/forte_normal.png", nil, 6*30)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="198" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="181" i:nil="true" />
+                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">180</Frames>
+                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.1</Minutes>
+                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">6</Seconds>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT6S</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="199" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="179" i:nil="true" />
+                  <Group z:Ref="76" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
+                  <MaxCamOffset xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</MaxCamOffset>
+                  <MaxDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">200</MaxDistance>
+                  <MaxHeading xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">180</MaxHeading>
+                  <MaxPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">15</MaxPitch>
+                  <MinDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">150</MinDistance>
+                  <MinHeading xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">165</MinHeading>
+                  <MinPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">-10</MinPitch>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="200" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="155" i:nil="true" />
+                  <CodeStr z:Id="201" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local string = "All right! Angel Wing, begin combat!"
+WG.AddConvo(string, 12, "LuaUI/Images/portraits/tact_aggressive.png", nil, 5*30)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="202" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="181" i:nil="true" />
+                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">150</Frames>
+                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.083333333333333329</Minutes>
+                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">5</Seconds>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT5S</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="203" z:Type="CMissionLib.Actions.LeaveCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="204">Leave Cutscene</Name>
+                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
+                </TriggerLogic>
+                <TriggerLogic z:Id="205" z:Type="CMissionLib.Actions.GiveOrdersAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="206">Give Orders</Name>
+                  <Groups xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="207" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">
+                    <d10p1:items z:Id="208" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                      <d10p1:_items z:Id="209" z:Size="4">
+                        <d10p1:string z:Id="210">Any Unit (Aliens)</d10p1:string>
+                        <d10p1:string i:nil="true" />
+                        <d10p1:string i:nil="true" />
+                        <d10p1:string i:nil="true" />
+                      </d10p1:_items>
+                      <d10p1:_size>1</d10p1:_size>
+                      <d10p1:_version>1</d10p1:_version>
+                    </d10p1:items>
+                    <d10p1:_monitor xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="211">
+                      <d11p1:_busyCount>0</d11p1:_busyCount>
+                    </d10p1:_monitor>
+                  </Groups>
+                  <Orders xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="212" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">
+                    <d10p1:items z:Id="213" z:Type="System.Collections.Generic.List`1[[CMissionLib.IOrder, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+                      <d10p1:_items z:Id="214" z:Size="4">
+                        <d10p1:anyType z:Id="215" z:Type="CMissionLib.FightOrder" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                          <Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">
+                            <d14p1:_x>730.57082142674369</d14p1:_x>
+                            <d14p1:_y>684.78070418779748</d14p1:_y>
+                          </Point>
+                          <X xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">730.57082142674369</X>
+                          <Y xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">684.78070418779748</Y>
+                        </d10p1:anyType>
+                        <d10p1:anyType i:nil="true" />
+                        <d10p1:anyType i:nil="true" />
+                        <d10p1:anyType i:nil="true" />
+                      </d10p1:_items>
+                      <d10p1:_size>1</d10p1:_size>
+                      <d10p1:_version>1</d10p1:_version>
+                    </d10p1:items>
+                    <d10p1:_monitor xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="216">
+                      <d11p1:_busyCount>0</d11p1:_busyCount>
+                    </d10p1:_monitor>
+                  </Orders>
+                </TriggerLogic>
+                <TriggerLogic z:Id="217" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="218">Wait</Name>
+                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">60</Frames>
+                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.033333333333333333</Minutes>
+                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">2</Seconds>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT2S</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="219" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="155" i:nil="true" />
+                  <CodeStr z:Id="220" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">GG.ResumeCombat()</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="221" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="155" i:nil="true" />
+                  <CodeStr z:Id="222" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StartTrack("sounds/music/Enter The Hell Hounds.ogg", true)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
+                </TriggerLogic>
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+              </_items>
+              <_size>23</_size>
+              <_version>45</_version>
+            </items>
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="223">
+              <d7p1:_busyCount>0</d7p1:_busyCount>
+            </_monitor>
+          </Logic>
+          <MaxOccurrences>1</MaxOccurrences>
+          <Name z:Id="224">Start</Name>
+          <Probability>1</Probability>
+        </Trigger>
+        <Trigger z:Id="225">
+          <Enabled>true</Enabled>
+          <Folder i:nil="true" />
+          <IsExpanded>true</IsExpanded>
+          <Logic z:Id="226">
+            <items z:Id="227" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="228" z:Size="4">
+                <TriggerLogic z:Id="229" z:Type="CMissionLib.Conditions.UnitDestroyedCondition" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="230">Unit Destroyed</Name>
+                  <Groups xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="231" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Conditions">
+                    <d10p1:items z:Id="232" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                      <d10p1:_items z:Id="233" z:Size="4">
+                        <d10p1:string z:Id="234">Any Unit (Aliens)</d10p1:string>
+                        <d10p1:string i:nil="true" />
+                        <d10p1:string i:nil="true" />
+                        <d10p1:string i:nil="true" />
+                      </d10p1:_items>
+                      <d10p1:_size>1</d10p1:_size>
+                      <d10p1:_version>1</d10p1:_version>
+                    </d10p1:items>
+                    <d10p1:_monitor xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="235">
+                      <d11p1:_busyCount>0</d11p1:_busyCount>
+                    </d10p1:_monitor>
+                  </Groups>
+                </TriggerLogic>
+                <TriggerLogic z:Id="236" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="218" i:nil="true" />
+                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">180</Frames>
+                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.1</Minutes>
+                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">6</Seconds>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT6S</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="237" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="155" i:nil="true" />
+                  <CodeStr z:Id="238" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local units = Spring.GetTeamUnits(1) or {}
+if #units == 0 then
+  GG.mission.ExecuteTriggerByName("Victory")
+elseif #units == 1 then
+  local unitDefID = Spring.GetUnitDefID(units[1])
+  local unitDef = UnitDefs[unitDefID]
+  local x, y, z = Spring.GetUnitPosition(units[1])
+  --Spring.Echo(unitDef.name, x, y, z)
+end</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Synced>
+                </TriggerLogic>
+                <TriggerLogic i:nil="true" />
+              </_items>
+              <_size>3</_size>
+              <_version>5</_version>
+            </items>
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="239">
+              <d7p1:_busyCount>0</d7p1:_busyCount>
+            </_monitor>
+          </Logic>
+          <MaxOccurrences>-1</MaxOccurrences>
+          <Name z:Id="240">Alien Destroyed</Name>
+          <Probability>1</Probability>
+        </Trigger>
+        <Trigger z:Id="241">
+          <Enabled>true</Enabled>
+          <Folder i:nil="true" />
+          <IsExpanded>true</IsExpanded>
+          <Logic z:Id="242">
+            <items z:Id="243" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="244" z:Size="16">
+                <TriggerLogic z:Id="245" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="246">Custom Action (Alternate)</Name>
+                  <CodeStr z:Id="247" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">GG.SetAngelsInvulnerable(true)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="248" z:Type="CMissionLib.Actions.ModifyObjectiveAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="249">Modify Objective</Name>
+                  <Description z:Ref="10" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
+                  <GroupTarget i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
+                  <ID z:Id="250" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">destroyEnemy</ID>
+                  <Status z:Id="251" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Complete</Status>
+                  <Title z:Ref="10" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
+                  <X xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</X>
+                  <Y xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Y>
+                </TriggerLogic>
+                <TriggerLogic z:Id="252" z:Type="CMissionLib.Actions.EnterCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="253">Enter Cutscene</Name>
+                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
+                </TriggerLogic>
+                <TriggerLogic z:Id="254" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="155" i:nil="true" />
+                  <CodeStr z:Id="255" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StopTrack(true)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="256" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="181" i:nil="true" />
+                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">60</Frames>
+                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.033333333333333333</Minutes>
+                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">2</Seconds>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT2S</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="257" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="179" i:nil="true" />
+                  <Group z:Ref="76" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
+                  <MaxCamOffset xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">10</MaxCamOffset>
+                  <MaxDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">200</MaxDistance>
+                  <MaxHeading xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">165</MaxHeading>
+                  <MaxPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">15</MaxPitch>
+                  <MinDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">150</MinDistance>
+                  <MinHeading xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">15</MinHeading>
+                  <MinPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">-10</MinPitch>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="258" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="155" i:nil="true" />
+                  <CodeStr z:Id="259" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StartTrack("sounds/music/Victory.ogg")
+
+local string = "All enemy ships have been destroyed."
+WG.AddConvo(string, 12, "LuaUI/Images/portraits/coco_normal.png", nil, 4.5*30)
+
+string = "We won..."
+WG.AddConvo(string, 12, "LuaUI/Images/portraits/tact_serious.png", nil, 3.5*30)
+
+string = "But... what's this sickly feeling I have?"
+WG.AddConvo(string, 12, "LuaUI/Images/portraits/tact_angry.png", nil, 5*30)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="260" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="181" i:nil="true" />
+                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">390</Frames>
+                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.21666666666666667</Minutes>
+                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">13</Seconds>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT13S</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="261" z:Type="CMissionLib.Actions.LeaveCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="204" i:nil="true" />
+                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
+                </TriggerLogic>
+                <TriggerLogic z:Id="262" z:Type="CMissionLib.VictoryAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="263">Victory</Name>
+                </TriggerLogic>
+                <TriggerLogic z:Id="264" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="246" i:nil="true" />
+                  <CodeStr z:Id="265" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StopTrack(true)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
+                </TriggerLogic>
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+              </_items>
+              <_size>11</_size>
+              <_version>27</_version>
+            </items>
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="266">
+              <d7p1:_busyCount>0</d7p1:_busyCount>
+            </_monitor>
+          </Logic>
+          <MaxOccurrences>1</MaxOccurrences>
+          <Name z:Id="267">Victory</Name>
+          <Probability>1</Probability>
+        </Trigger>
+        <Trigger z:Id="268">
+          <Enabled>true</Enabled>
+          <Folder i:nil="true" />
+          <IsExpanded>true</IsExpanded>
+          <Logic z:Id="269">
+            <items z:Id="270" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="271" z:Size="8">
+                <TriggerLogic z:Id="272" z:Type="CMissionLib.Actions.EnterCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="273">Enter Cutscene</Name>
+                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
+                </TriggerLogic>
+                <TriggerLogic z:Id="274" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="218" i:nil="true" />
+                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">60</Frames>
+                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.033333333333333333</Minutes>
+                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">2</Seconds>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT2S</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="275" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="246" i:nil="true" />
+                  <CodeStr z:Id="276" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">  local myTeamID = Spring.GetMyTeamID()
+  local elsiorID = Spring.GetGameRulesParam("elsiorUnitID")
+  if not elsiorID then
+    local units = unitDefID and Spring.GetTeamUnitsByDefs(unitDefID) or unitDefIDBackup and Spring.GetTeamUnitsByDefs(unitDefIDBackup)
+    if units then
+      elsiorID = units[i]
+    end
+  end
+  
+  if elsiorID then
+    WG.BeautyShot(elsiorID)
+  end
+  
+  WG.Music.StopTrack()
+
+  WG.AddConvo("Hull critically damaged! Chrono String containment failing!", 12, "LuaUI/Images/portraits/almo_shocked.png", nil, 5.5*30)
+  WG.AddConvo("All hands, abandon ship!", 12, "LuaUI/Images/portraits/lester_angry.png", nil, 3.5*30)
+  WG.AddConvo("It's over...\nif only I had commanded better...", 12, "LuaUI/Images/portraits/tact_angry.png", nil, 5*30)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="277" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="218" i:nil="true" />
+                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">420</Frames>
+                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.23333333333333334</Minutes>
+                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">14</Seconds>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT14S</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="278" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="246" i:nil="true" />
+                  <CodeStr z:Id="279" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local elsiorID = GG.mission.FindUnitInGroup("Elsior")
+Spring.DestroyUnit(elsiorID, true)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="280" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="218" i:nil="true" />
+                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">60</Frames>
+                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.033333333333333333</Minutes>
+                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">2</Seconds>
+                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT2S</Time>
+                </TriggerLogic>
+                <TriggerLogic z:Id="281" z:Type="CMissionLib.Actions.DefeatAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="282">Defeat</Name>
+                </TriggerLogic>
+                <TriggerLogic z:Id="283" z:Type="CMissionLib.Actions.LeaveCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="284">Leave Cutscene</Name>
+                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
+                </TriggerLogic>
+              </_items>
+              <_size>8</_size>
+              <_version>12</_version>
+            </items>
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="285">
+              <d7p1:_busyCount>0</d7p1:_busyCount>
+            </_monitor>
+          </Logic>
+          <MaxOccurrences>1</MaxOccurrences>
+          <Name z:Id="286">Elsior Destroyed</Name>
+          <Probability>1</Probability>
+        </Trigger>
+        <Trigger z:Id="287">
+          <Enabled>true</Enabled>
+          <Folder i:nil="true" />
+          <IsExpanded>true</IsExpanded>
+          <Logic z:Id="288">
+            <items z:Id="289" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="290" z:Size="4">
+                <TriggerLogic z:Id="291" z:Type="CMissionLib.Conditions.UnitDestroyedCondition" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="292">Unit Destroyed</Name>
+                  <Groups xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="293" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Conditions">
+                    <d10p1:items z:Id="294" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                      <d10p1:_items z:Id="295" z:Size="4">
+                        <d10p1:string z:Ref="76" i:nil="true" />
+                        <d10p1:string i:nil="true" />
+                        <d10p1:string i:nil="true" />
+                        <d10p1:string i:nil="true" />
+                      </d10p1:_items>
+                      <d10p1:_size>1</d10p1:_size>
+                      <d10p1:_version>1</d10p1:_version>
+                    </d10p1:items>
+                    <d10p1:_monitor xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="296">
+                      <d11p1:_busyCount>0</d11p1:_busyCount>
+                    </d10p1:_monitor>
+                  </Groups>
+                </TriggerLogic>
+                <TriggerLogic z:Id="297" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="298">Custom Action (Alternate)</Name>
+                  <CodeStr z:Id="299" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Spring.SetGameRulesParam("gameOver", 1)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="300" z:Type="CMissionLib.Actions.DefeatAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="301">Defeat</Name>
+                </TriggerLogic>
+                <TriggerLogic i:nil="true" />
+              </_items>
+              <_size>3</_size>
+              <_version>5</_version>
+            </items>
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="302">
+              <d7p1:_busyCount>0</d7p1:_busyCount>
+            </_monitor>
+          </Logic>
+          <MaxOccurrences>1</MaxOccurrences>
+          <Name z:Id="303">Elsior Destroyed Fast</Name>
+          <Probability>1</Probability>
+        </Trigger>
+        <Trigger i:nil="true" />
+        <Trigger i:nil="true" />
+      </_items>
+      <_size>6</_size>
+      <_version>6</_version>
+    </items>
+    <_monitor xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="304">
+      <d3p1:_busyCount>0</d3p1:_busyCount>
+    </_monitor>
+  </Triggers>
+</Mission>

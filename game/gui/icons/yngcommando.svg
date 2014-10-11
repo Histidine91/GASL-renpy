@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64"
+   height="64"
+   viewBox="0 0 68.257114 68.256961"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="yngcommando.svg"
+   inkscape:export-filename="yngcommando.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1005"
+     inkscape:window-height="649"
+     id="namedview5"
+     showgrid="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.9265483"
+     inkscape:cx="-66.112915"
+     inkscape:cy="-20.708459"
+     inkscape:window-x="249"
+     inkscape:window-y="248"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3754"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="-220.63635px"
+       originy="0.57371317px" />
+  </sodipodi:namedview>
+  <path
+     id="Selection"
+     d="m 15.37557,36.790056 c 0.0092,-0.706268 0.26783,-1.184149 0.511815,-1.83447 0.136668,-0.367814 0.239401,-0.777822 0.465042,-1.100691 l 1.954633,-2.109642 2.954422,-3.210334 1.192406,-1.284131 c 0.150429,-0.168776 0.426516,-0.420095 0.474212,-0.642069 0.06237,-0.285261 -0.212797,-0.40083 -0.214632,-1.375855 l 0,-6.512388 c 0,-0.327454 -0.06421,-1.671208 0.09356,-1.871166 0.09998,-0.127496 0.224721,-0.121991 0.365057,-0.146758 0.02176,-0.01672 2.017925,-0.366894 2.017925,-0.366894 l 0.385239,-2.20137 0.73379,-3.668952 0.621888,-2.8434356 C 27.0942,7.3219608 27.844496,6.6184409 28.125175,6.3377662 l 2.293092,-2.2930953 c 1.3887,-1.3886954 1.259366,-1.2061638 2.84344,-2.2628225 0.324699,-0.2164678 0.782397,-0.6237232 1.192404,-0.4989766 0.221974,0.067874 1.12087,0.6961824 1.37586,0.8658691 l 1.192409,0.8245962 2.843436,2.8140865 c 0.384323,0.3843222 1.609752,1.519863 1.787697,1.9261979 l 0.487053,2.2930965 1.302476,6.32894 1.926199,0.366894 0.365061,0.146758 0.09356,1.871166 0,6.512388 -0.214631,1.375855 0.474212,0.642069 1.192409,1.284131 2.954423,3.210334 1.954634,2.109642 0.46504,1.100691 0.497142,1.375856 0,3.852396 -2.278421,0 c 0.01474,0.02552 -2.476534,0.275173 -2.476534,0.275173 l -2.071122,2.751712 c -0.408171,0.565939 -0.574192,1.087849 -1.322658,1.100684 l -1.559305,0 -0.817259,6.604116 0.476964,2.201366 0.878714,3.302058 0.378817,1.742754 -1.926198,0 c -1.071334,0.0016 -0.883301,0.245812 -1.49051,1.467572 l -2.066535,4.311018 -1.144713,2.384822 c -0.114654,0.237562 -0.351302,0.780566 -0.562269,0.915402 -0.178859,0.113742 -0.489802,0.09355 -0.698017,0.09355 l -4.402737,0 c -0.208215,0 -0.519159,0.0202 -0.698024,-0.09355 -0.210974,-0.134836 -0.447623,-0.67784 -0.562277,-0.915402 l -1.144713,-2.384822 -2.066535,-4.311018 c -0.607213,-1.22176 -0.41918,-1.465739 -1.490514,-1.467572 l -1.926199,0 0.378817,-1.742754 0.878719,-3.302058 0.47696,-2.201366 -0.817259,-6.604116 -1.46758,0 c -0.856694,-0.0055 -0.936496,-0.438437 -1.414376,-1.100684 l -2.071122,-2.751712 -2.476541,-0.275173 -2.293091,0 z"
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.06651735000000000;stroke-miterlimit:4;stroke-dasharray:none"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccccccsccccccssccccccccccccccccccccccccccccccccccsscccccccccccccccc"
+     inkscape:export-filename="yngcommando.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
+</svg>
