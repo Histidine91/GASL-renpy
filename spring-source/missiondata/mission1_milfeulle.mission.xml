@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mission xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" z:Type="CMissionLib.Mission" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">
   <Author z:Id="2">KingRaptor</Author>
-  <ContentFolderPath z:Id="3">J:\Games\Spring\Missions\My Missions\gasl\mission1</ContentFolderPath>
+  <ContentFolderPath z:Id="3">D:\Games\Ren'Py\Projects\gasl\spring-source\missiondata\mission1</ContentFolderPath>
   <Counters xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="4">
     <d2p1:items z:Id="5" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
       <d2p1:_items z:Id="6" z:Size="0" />
@@ -188,7 +188,7 @@
   <StartingPlayer z:Ref="38" i:nil="true" />
   <Triggers z:Id="60">
     <items z:Id="61" z:Type="System.Collections.Generic.List`1[[CMissionLib.Trigger, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
-      <_items z:Id="62" z:Size="8">
+      <_items z:Id="62" z:Size="16">
         <Trigger z:Id="63">
           <Enabled>true</Enabled>
           <Folder i:nil="true" />
@@ -653,7 +653,9 @@ end</CodeStr>
                 </TriggerLogic>
                 <TriggerLogic z:Id="168" z:Type="CMissionLib.Actions.EnterCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
                   <Name z:Id="169">Enter Cutscene</Name>
+                  <ID i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
                   <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Instant>
+                  <Skippable xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Skippable>
                 </TriggerLogic>
                 <TriggerLogic i:nil="true" />
               </_items>
@@ -678,8 +680,14 @@ end</CodeStr>
                 <TriggerLogic z:Id="176" z:Type="CMissionLib.Conditions.GameStartedCondition" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
                   <Name z:Id="177">Game Starts</Name>
                 </TriggerLogic>
-                <TriggerLogic z:Id="178" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="179">Beauty Shot</Name>
+                <TriggerLogic z:Id="178" z:Type="CMissionLib.Actions.EnterCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="179">Enter Cutscene</Name>
+                  <ID z:Id="180" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Intro</ID>
+                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Instant>
+                  <Skippable xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Skippable>
+                </TriggerLogic>
+                <TriggerLogic z:Id="181" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="182">Beauty Shot</Name>
                   <Group z:Ref="76" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
                   <MaxCamOffset xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</MaxCamOffset>
                   <MaxDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">200</MaxDistance>
@@ -690,34 +698,34 @@ end</CodeStr>
                   <MinPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">-10</MinPitch>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="180" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="181">Wait</Name>
+                <TriggerLogic z:Id="183" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="184">Wait</Name>
                   <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">30</Frames>
                   <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.016666666666666666</Minutes>
                   <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">1</Seconds>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT1S</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="182" z:Type="CMissionLib.Actions.FadeInAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="183">Fade In</Name>
+                <TriggerLogic z:Id="185" z:Type="CMissionLib.Actions.FadeInAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="186">Fade In</Name>
                   <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
                 </TriggerLogic>
-                <TriggerLogic z:Id="184" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                <TriggerLogic z:Id="187" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
                   <Name z:Ref="155" i:nil="true" />
-                  <CodeStr z:Id="185" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StartTrack("sounds/music/Time to Fight.ogg")
+                  <CodeStr z:Id="188" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StartTrack("sounds/music/Time to Fight.ogg")
 
 local string = "Remember, we know little about these aliens besides the fact that they're armed and dangerous. Please be careful out there."
 WG.AddConvo(string, 12, "LuaUI/Images/portraits/tact_serious.png", nil, 8*30)</CodeStr>
                   <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
                 </TriggerLogic>
-                <TriggerLogic z:Id="186" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="181" i:nil="true" />
+                <TriggerLogic z:Id="189" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="184" i:nil="true" />
                   <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">240</Frames>
                   <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.13333333333333333</Minutes>
                   <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">8</Seconds>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT8S</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="187" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="179" i:nil="true" />
+                <TriggerLogic z:Id="190" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="182" i:nil="true" />
                   <Group z:Ref="134" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
                   <MaxCamOffset xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</MaxCamOffset>
                   <MaxDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">200</MaxDistance>
@@ -728,21 +736,21 @@ WG.AddConvo(string, 12, "LuaUI/Images/portraits/tact_serious.png", nil, 8*30)</C
                   <MinPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">-10</MinPitch>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="188" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                <TriggerLogic z:Id="191" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
                   <Name z:Ref="155" i:nil="true" />
-                  <CodeStr z:Id="189" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local string = "Don't worry, Tact! We'll protect you and the Elsior with everything we've got!"
+                  <CodeStr z:Id="192" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local string = "Don't worry, Tact! We'll protect you and the Elsior with everything we've got!"
 WG.AddConvo(string, 12, "LuaUI/Images/portraits/milfeulle_happy.png", nil, 6*30)</CodeStr>
                   <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
                 </TriggerLogic>
-                <TriggerLogic z:Id="190" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="181" i:nil="true" />
+                <TriggerLogic z:Id="193" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="184" i:nil="true" />
                   <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">180</Frames>
                   <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.1</Minutes>
                   <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">6</Seconds>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT6S</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="191" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="179" i:nil="true" />
+                <TriggerLogic z:Id="194" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="182" i:nil="true" />
                   <Group z:Ref="141" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
                   <MaxCamOffset xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</MaxCamOffset>
                   <MaxDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">200</MaxDistance>
@@ -753,21 +761,21 @@ WG.AddConvo(string, 12, "LuaUI/Images/portraits/milfeulle_happy.png", nil, 6*30)
                   <MinPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">-10</MinPitch>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="192" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                <TriggerLogic z:Id="195" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
                   <Name z:Ref="155" i:nil="true" />
-                  <CodeStr z:Id="193" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local string = "Do these aliens think we're afraid of them?"
+                  <CodeStr z:Id="196" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local string = "Do these aliens think we're afraid of them?"
 WG.AddConvo(string, 12, "LuaUI/Images/portraits/ranpha_serious.png", nil, 5*30)</CodeStr>
                   <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
                 </TriggerLogic>
-                <TriggerLogic z:Id="194" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="181" i:nil="true" />
+                <TriggerLogic z:Id="197" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="184" i:nil="true" />
                   <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">150</Frames>
                   <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.083333333333333329</Minutes>
                   <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">5</Seconds>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT5S</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="195" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="179" i:nil="true" />
+                <TriggerLogic z:Id="198" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="182" i:nil="true" />
                   <Group z:Ref="148" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
                   <MaxCamOffset xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">10</MaxCamOffset>
                   <MaxDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">200</MaxDistance>
@@ -778,21 +786,21 @@ WG.AddConvo(string, 12, "LuaUI/Images/portraits/ranpha_serious.png", nil, 5*30)<
                   <MinPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">-10</MinPitch>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="196" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                <TriggerLogic z:Id="199" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
                   <Name z:Ref="155" i:nil="true" />
-                  <CodeStr z:Id="197" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local string = "We won't back down from anyone who threatens the people we've sworn to protect."
+                  <CodeStr z:Id="200" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local string = "We won't back down from anyone who threatens the people we've sworn to protect."
 WG.AddConvo(string, 12, "LuaUI/Images/portraits/forte_normal.png", nil, 6*30)</CodeStr>
                   <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
                 </TriggerLogic>
-                <TriggerLogic z:Id="198" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="181" i:nil="true" />
+                <TriggerLogic z:Id="201" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="184" i:nil="true" />
                   <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">180</Frames>
                   <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.1</Minutes>
                   <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">6</Seconds>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT6S</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="199" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="179" i:nil="true" />
+                <TriggerLogic z:Id="202" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="182" i:nil="true" />
                   <Group z:Ref="76" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
                   <MaxCamOffset xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</MaxCamOffset>
                   <MaxDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">200</MaxDistance>
@@ -803,50 +811,100 @@ WG.AddConvo(string, 12, "LuaUI/Images/portraits/forte_normal.png", nil, 6*30)</C
                   <MinPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">-10</MinPitch>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="200" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                <TriggerLogic z:Id="203" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
                   <Name z:Ref="155" i:nil="true" />
-                  <CodeStr z:Id="201" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local string = "All right! Angel Wing, begin combat!"
+                  <CodeStr z:Id="204" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local string = "All right! Angel Wing, begin combat!"
 WG.AddConvo(string, 12, "LuaUI/Images/portraits/tact_aggressive.png", nil, 5*30)</CodeStr>
                   <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
                 </TriggerLogic>
-                <TriggerLogic z:Id="202" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="181" i:nil="true" />
+                <TriggerLogic z:Id="205" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="184" i:nil="true" />
                   <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">150</Frames>
                   <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.083333333333333329</Minutes>
                   <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">5</Seconds>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT5S</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="203" z:Type="CMissionLib.Actions.LeaveCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="204">Leave Cutscene</Name>
-                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
-                </TriggerLogic>
-                <TriggerLogic z:Id="205" z:Type="CMissionLib.Actions.GiveOrdersAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="206">Give Orders</Name>
-                  <Groups xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="207" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">
-                    <d10p1:items z:Id="208" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
-                      <d10p1:_items z:Id="209" z:Size="4">
-                        <d10p1:string z:Id="210">Any Unit (Aliens)</d10p1:string>
-                        <d10p1:string i:nil="true" />
-                        <d10p1:string i:nil="true" />
-                        <d10p1:string i:nil="true" />
-                      </d10p1:_items>
-                      <d10p1:_size>1</d10p1:_size>
-                      <d10p1:_version>1</d10p1:_version>
-                    </d10p1:items>
-                    <d10p1:_monitor xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="211">
-                      <d11p1:_busyCount>0</d11p1:_busyCount>
-                    </d10p1:_monitor>
-                  </Groups>
-                  <Orders xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="212" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">
-                    <d10p1:items z:Id="213" z:Type="System.Collections.Generic.List`1[[CMissionLib.IOrder, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
-                      <d10p1:_items z:Id="214" z:Size="4">
-                        <d10p1:anyType z:Id="215" z:Type="CMissionLib.FightOrder" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                          <Point xmlns:d14p1="http://schemas.datacontract.org/2004/07/System.Windows" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">
-                            <d14p1:_x>730.57082142674369</d14p1:_x>
-                            <d14p1:_y>684.78070418779748</d14p1:_y>
-                          </Point>
-                          <X xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">730.57082142674369</X>
-                          <Y xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">684.78070418779748</Y>
+                <TriggerLogic z:Id="206" z:Type="CMissionLib.Actions.ExecuteTriggersAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="207">Execute Triggers</Name>
+                  <Triggers xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="208" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">
+                    <d10p1:items z:Id="209" z:Type="System.Collections.Generic.List`1[[CMissionLib.INamed, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+                      <d10p1:_items z:Id="210" z:Size="4">
+                        <d10p1:anyType z:Id="211" z:Type="CMissionLib.Trigger" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                          <Enabled xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">true</Enabled>
+                          <Folder i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib" />
+                          <IsExpanded xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">true</IsExpanded>
+                          <Logic z:Id="212" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">
+                            <items z:Id="213" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+                              <_items z:Id="214" z:Size="4">
+                                <TriggerLogic z:Id="215" z:Type="CMissionLib.Actions.GiveOrdersAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                                  <Name z:Id="216">Give Orders</Name>
+                                  <Groups z:Id="217" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">
+                                    <d10p1:items z:Id="218" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                                      <d10p1:_items z:Id="219" z:Size="4">
+                                        <d10p1:string z:Id="220">Any Unit (Aliens)</d10p1:string>
+                                        <d10p1:string i:nil="true" />
+                                        <d10p1:string i:nil="true" />
+                                        <d10p1:string i:nil="true" />
+                                      </d10p1:_items>
+                                      <d10p1:_size>1</d10p1:_size>
+                                      <d10p1:_version>1</d10p1:_version>
+                                    </d10p1:items>
+                                    <d10p1:_monitor xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="221">
+                                      <d19p1:_busyCount>0</d19p1:_busyCount>
+                                    </d10p1:_monitor>
+                                  </Groups>
+                                  <Orders z:Id="222" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">
+                                    <d10p1:items z:Id="223" z:Type="System.Collections.Generic.List`1[[CMissionLib.IOrder, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+                                      <d10p1:_items z:Id="224" z:Size="4">
+                                        <d10p1:anyType z:Id="225" z:Type="CMissionLib.FightOrder" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                                          <Point xmlns:d22p1="http://schemas.datacontract.org/2004/07/System.Windows" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">
+                                            <d22p1:_x>730.57082142674369</d22p1:_x>
+                                            <d22p1:_y>684.78070418779748</d22p1:_y>
+                                          </Point>
+                                          <X xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">730.57082142674369</X>
+                                          <Y xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">684.78070418779748</Y>
+                                        </d10p1:anyType>
+                                        <d10p1:anyType i:nil="true" />
+                                        <d10p1:anyType i:nil="true" />
+                                        <d10p1:anyType i:nil="true" />
+                                      </d10p1:_items>
+                                      <d10p1:_size>1</d10p1:_size>
+                                      <d10p1:_version>1</d10p1:_version>
+                                    </d10p1:items>
+                                    <d10p1:_monitor xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="226">
+                                      <d19p1:_busyCount>0</d19p1:_busyCount>
+                                    </d10p1:_monitor>
+                                  </Orders>
+                                  <Queue xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Queue>
+                                </TriggerLogic>
+                                <TriggerLogic z:Id="227" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                                  <Name z:Id="228">Wait</Name>
+                                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">60</Frames>
+                                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.033333333333333333</Minutes>
+                                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">2</Seconds>
+                                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT2S</Time>
+                                </TriggerLogic>
+                                <TriggerLogic z:Id="229" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                                  <Name z:Ref="155" i:nil="true" />
+                                  <CodeStr z:Id="230" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">GG.ResumeCombat()</CodeStr>
+                                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Synced>
+                                </TriggerLogic>
+                                <TriggerLogic z:Id="231" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                                  <Name z:Ref="155" i:nil="true" />
+                                  <CodeStr z:Id="232" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StartTrack("sounds/music/Enter The Hell Hounds.ogg", true)</CodeStr>
+                                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
+                                </TriggerLogic>
+                              </_items>
+                              <_size>4</_size>
+                              <_version>8</_version>
+                            </items>
+                            <_monitor xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="233">
+                              <d15p1:_busyCount>0</d15p1:_busyCount>
+                            </_monitor>
+                          </Logic>
+                          <MaxOccurrences xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">1</MaxOccurrences>
+                          <Name z:Id="234" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">Post Start</Name>
+                          <Probability xmlns="http://schemas.datacontract.org/2004/07/CMissionLib">1</Probability>
                         </d10p1:anyType>
                         <d10p1:anyType i:nil="true" />
                         <d10p1:anyType i:nil="true" />
@@ -855,28 +913,17 @@ WG.AddConvo(string, 12, "LuaUI/Images/portraits/tact_aggressive.png", nil, 5*30)
                       <d10p1:_size>1</d10p1:_size>
                       <d10p1:_version>1</d10p1:_version>
                     </d10p1:items>
-                    <d10p1:_monitor xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="216">
+                    <d10p1:_monitor xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="235">
                       <d11p1:_busyCount>0</d11p1:_busyCount>
                     </d10p1:_monitor>
-                  </Orders>
+                  </Triggers>
                 </TriggerLogic>
-                <TriggerLogic z:Id="217" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="218">Wait</Name>
-                  <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">60</Frames>
-                  <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.033333333333333333</Minutes>
-                  <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">2</Seconds>
-                  <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT2S</Time>
+                <TriggerLogic z:Id="236" z:Type="CMissionLib.Actions.LeaveCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="237">Leave Cutscene</Name>
+                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
                 </TriggerLogic>
-                <TriggerLogic z:Id="219" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="155" i:nil="true" />
-                  <CodeStr z:Id="220" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">GG.ResumeCombat()</CodeStr>
-                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Synced>
-                </TriggerLogic>
-                <TriggerLogic z:Id="221" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="155" i:nil="true" />
-                  <CodeStr z:Id="222" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StartTrack("sounds/music/Enter The Hell Hounds.ogg", true)</CodeStr>
-                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
-                </TriggerLogic>
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
                 <TriggerLogic i:nil="true" />
                 <TriggerLogic i:nil="true" />
                 <TriggerLogic i:nil="true" />
@@ -887,30 +934,31 @@ WG.AddConvo(string, 12, "LuaUI/Images/portraits/tact_aggressive.png", nil, 5*30)
                 <TriggerLogic i:nil="true" />
                 <TriggerLogic i:nil="true" />
               </_items>
-              <_size>23</_size>
-              <_version>45</_version>
+              <_size>21</_size>
+              <_version>55</_version>
             </items>
-            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="223">
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="238">
               <d7p1:_busyCount>0</d7p1:_busyCount>
             </_monitor>
           </Logic>
           <MaxOccurrences>1</MaxOccurrences>
-          <Name z:Id="224">Start</Name>
+          <Name z:Id="239">Start</Name>
           <Probability>1</Probability>
         </Trigger>
-        <Trigger z:Id="225">
+        <Trigger z:Ref="211" i:nil="true" />
+        <Trigger z:Id="240">
           <Enabled>true</Enabled>
           <Folder i:nil="true" />
           <IsExpanded>true</IsExpanded>
-          <Logic z:Id="226">
-            <items z:Id="227" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
-              <_items z:Id="228" z:Size="4">
-                <TriggerLogic z:Id="229" z:Type="CMissionLib.Conditions.UnitDestroyedCondition" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="230">Unit Destroyed</Name>
-                  <Groups xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="231" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Conditions">
-                    <d10p1:items z:Id="232" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
-                      <d10p1:_items z:Id="233" z:Size="4">
-                        <d10p1:string z:Id="234">Any Unit (Aliens)</d10p1:string>
+          <Logic z:Id="241">
+            <items z:Id="242" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="243" z:Size="4">
+                <TriggerLogic z:Id="244" z:Type="CMissionLib.Conditions.UnitDestroyedCondition" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="245">Unit Destroyed</Name>
+                  <Groups xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="246" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Conditions">
+                    <d10p1:items z:Id="247" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                      <d10p1:_items z:Id="248" z:Size="4">
+                        <d10p1:string z:Id="249">Any Unit (Aliens)</d10p1:string>
                         <d10p1:string i:nil="true" />
                         <d10p1:string i:nil="true" />
                         <d10p1:string i:nil="true" />
@@ -918,21 +966,21 @@ WG.AddConvo(string, 12, "LuaUI/Images/portraits/tact_aggressive.png", nil, 5*30)
                       <d10p1:_size>1</d10p1:_size>
                       <d10p1:_version>1</d10p1:_version>
                     </d10p1:items>
-                    <d10p1:_monitor xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="235">
+                    <d10p1:_monitor xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="250">
                       <d11p1:_busyCount>0</d11p1:_busyCount>
                     </d10p1:_monitor>
                   </Groups>
                 </TriggerLogic>
-                <TriggerLogic z:Id="236" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="218" i:nil="true" />
+                <TriggerLogic z:Id="251" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="228" i:nil="true" />
                   <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">180</Frames>
                   <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.1</Minutes>
                   <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">6</Seconds>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT6S</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="237" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                <TriggerLogic z:Id="252" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
                   <Name z:Ref="155" i:nil="true" />
-                  <CodeStr z:Id="238" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local units = Spring.GetTeamUnits(1) or {}
+                  <CodeStr z:Id="253" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local units = Spring.GetTeamUnits(1) or {}
 if #units == 0 then
   GG.mission.ExecuteTriggerByName("Victory")
 elseif #units == 1 then
@@ -948,54 +996,56 @@ end</CodeStr>
               <_size>3</_size>
               <_version>5</_version>
             </items>
-            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="239">
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="254">
               <d7p1:_busyCount>0</d7p1:_busyCount>
             </_monitor>
           </Logic>
           <MaxOccurrences>-1</MaxOccurrences>
-          <Name z:Id="240">Alien Destroyed</Name>
+          <Name z:Id="255">Alien Destroyed</Name>
           <Probability>1</Probability>
         </Trigger>
-        <Trigger z:Id="241">
+        <Trigger z:Id="256">
           <Enabled>true</Enabled>
           <Folder i:nil="true" />
           <IsExpanded>true</IsExpanded>
-          <Logic z:Id="242">
-            <items z:Id="243" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
-              <_items z:Id="244" z:Size="16">
-                <TriggerLogic z:Id="245" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="246">Custom Action (Alternate)</Name>
-                  <CodeStr z:Id="247" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">GG.SetAngelsInvulnerable(true)</CodeStr>
+          <Logic z:Id="257">
+            <items z:Id="258" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="259" z:Size="16">
+                <TriggerLogic z:Id="260" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="261">Custom Action (Alternate)</Name>
+                  <CodeStr z:Id="262" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">GG.SetAngelsInvulnerable(true)</CodeStr>
                   <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Synced>
                 </TriggerLogic>
-                <TriggerLogic z:Id="248" z:Type="CMissionLib.Actions.ModifyObjectiveAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="249">Modify Objective</Name>
+                <TriggerLogic z:Id="263" z:Type="CMissionLib.Actions.ModifyObjectiveAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="264">Modify Objective</Name>
                   <Description z:Ref="10" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
                   <GroupTarget i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
-                  <ID z:Id="250" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">destroyEnemy</ID>
-                  <Status z:Id="251" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Complete</Status>
+                  <ID z:Id="265" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">destroyEnemy</ID>
+                  <Status z:Id="266" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Complete</Status>
                   <Title z:Ref="10" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
                   <X xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</X>
                   <Y xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Y>
                 </TriggerLogic>
-                <TriggerLogic z:Id="252" z:Type="CMissionLib.Actions.EnterCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="253">Enter Cutscene</Name>
+                <TriggerLogic z:Id="267" z:Type="CMissionLib.Actions.EnterCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="268">Enter Cutscene</Name>
+                  <ID z:Id="269" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Victory</ID>
                   <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
+                  <Skippable xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Skippable>
                 </TriggerLogic>
-                <TriggerLogic z:Id="254" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                <TriggerLogic z:Id="270" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
                   <Name z:Ref="155" i:nil="true" />
-                  <CodeStr z:Id="255" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StopTrack(true)</CodeStr>
+                  <CodeStr z:Id="271" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StopTrack(true)</CodeStr>
                   <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
                 </TriggerLogic>
-                <TriggerLogic z:Id="256" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="181" i:nil="true" />
+                <TriggerLogic z:Id="272" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="184" i:nil="true" />
                   <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">60</Frames>
                   <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.033333333333333333</Minutes>
                   <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">2</Seconds>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT2S</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="257" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="179" i:nil="true" />
+                <TriggerLogic z:Id="273" z:Type="CMissionLib.Actions.BeautyShotAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="182" i:nil="true" />
                   <Group z:Ref="76" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions" />
                   <MaxCamOffset xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">10</MaxCamOffset>
                   <MaxDistance xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">200</MaxDistance>
@@ -1006,9 +1056,9 @@ end</CodeStr>
                   <MinPitch xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">-10</MinPitch>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="258" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                <TriggerLogic z:Id="274" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
                   <Name z:Ref="155" i:nil="true" />
-                  <CodeStr z:Id="259" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StartTrack("sounds/music/Victory.ogg")
+                  <CodeStr z:Id="275" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StartTrack("sounds/music/Victory.ogg")
 
 local string = "All enemy ships have been destroyed."
 WG.AddConvo(string, 12, "LuaUI/Images/portraits/coco_normal.png", nil, 4.5*30)
@@ -1020,24 +1070,24 @@ string = "But... what's this sickly feeling I have?"
 WG.AddConvo(string, 12, "LuaUI/Images/portraits/tact_angry.png", nil, 5*30)</CodeStr>
                   <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
                 </TriggerLogic>
-                <TriggerLogic z:Id="260" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="181" i:nil="true" />
+                <TriggerLogic z:Id="276" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="184" i:nil="true" />
                   <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">390</Frames>
                   <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.21666666666666667</Minutes>
                   <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">13</Seconds>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT13S</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="261" z:Type="CMissionLib.Actions.LeaveCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="204" i:nil="true" />
-                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
+                <TriggerLogic z:Id="277" z:Type="CMissionLib.VictoryAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="278">Victory</Name>
                 </TriggerLogic>
-                <TriggerLogic z:Id="262" z:Type="CMissionLib.VictoryAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="263">Victory</Name>
-                </TriggerLogic>
-                <TriggerLogic z:Id="264" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="246" i:nil="true" />
-                  <CodeStr z:Id="265" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StopTrack(true)</CodeStr>
+                <TriggerLogic z:Id="279" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="261" i:nil="true" />
+                  <CodeStr z:Id="280" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StopTrack(true)</CodeStr>
                   <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="281" z:Type="CMissionLib.Actions.LeaveCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="237" i:nil="true" />
+                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
                 </TriggerLogic>
                 <TriggerLogic i:nil="true" />
                 <TriggerLogic i:nil="true" />
@@ -1046,37 +1096,39 @@ WG.AddConvo(string, 12, "LuaUI/Images/portraits/tact_angry.png", nil, 5*30)</Cod
                 <TriggerLogic i:nil="true" />
               </_items>
               <_size>11</_size>
-              <_version>27</_version>
+              <_version>29</_version>
             </items>
-            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="266">
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="282">
               <d7p1:_busyCount>0</d7p1:_busyCount>
             </_monitor>
           </Logic>
           <MaxOccurrences>1</MaxOccurrences>
-          <Name z:Id="267">Victory</Name>
+          <Name z:Id="283">Victory</Name>
           <Probability>1</Probability>
         </Trigger>
-        <Trigger z:Id="268">
+        <Trigger z:Id="284">
           <Enabled>true</Enabled>
           <Folder i:nil="true" />
           <IsExpanded>true</IsExpanded>
-          <Logic z:Id="269">
-            <items z:Id="270" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
-              <_items z:Id="271" z:Size="8">
-                <TriggerLogic z:Id="272" z:Type="CMissionLib.Actions.EnterCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="273">Enter Cutscene</Name>
+          <Logic z:Id="285">
+            <items z:Id="286" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="287" z:Size="8">
+                <TriggerLogic z:Id="288" z:Type="CMissionLib.Actions.EnterCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="289">Enter Cutscene</Name>
+                  <ID z:Id="290" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Defeat</ID>
                   <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
+                  <Skippable xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Skippable>
                 </TriggerLogic>
-                <TriggerLogic z:Id="274" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="218" i:nil="true" />
+                <TriggerLogic z:Id="291" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="228" i:nil="true" />
                   <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">60</Frames>
                   <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.033333333333333333</Minutes>
                   <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">2</Seconds>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT2S</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="275" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="246" i:nil="true" />
-                  <CodeStr z:Id="276" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">  local myTeamID = Spring.GetMyTeamID()
+                <TriggerLogic z:Id="292" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="261" i:nil="true" />
+                  <CodeStr z:Id="293" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">  local myTeamID = Spring.GetMyTeamID()
   local elsiorID = Spring.GetGameRulesParam("elsiorUnitID")
   if not elsiorID then
     local units = unitDefID and Spring.GetTeamUnitsByDefs(unitDefID) or unitDefIDBackup and Spring.GetTeamUnitsByDefs(unitDefIDBackup)
@@ -1096,57 +1148,57 @@ WG.AddConvo(string, 12, "LuaUI/Images/portraits/tact_angry.png", nil, 5*30)</Cod
   WG.AddConvo("It's over...\nif only I had commanded better...", 12, "LuaUI/Images/portraits/tact_angry.png", nil, 5*30)</CodeStr>
                   <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Synced>
                 </TriggerLogic>
-                <TriggerLogic z:Id="277" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="218" i:nil="true" />
+                <TriggerLogic z:Id="294" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="228" i:nil="true" />
                   <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">420</Frames>
                   <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.23333333333333334</Minutes>
                   <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">14</Seconds>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT14S</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="278" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="246" i:nil="true" />
-                  <CodeStr z:Id="279" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local elsiorID = GG.mission.FindUnitInGroup("Elsior")
+                <TriggerLogic z:Id="295" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="261" i:nil="true" />
+                  <CodeStr z:Id="296" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local elsiorID = GG.mission.FindUnitInGroup("Elsior")
 Spring.DestroyUnit(elsiorID, true)</CodeStr>
                   <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Synced>
                 </TriggerLogic>
-                <TriggerLogic z:Id="280" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Ref="218" i:nil="true" />
+                <TriggerLogic z:Id="297" z:Type="CMissionLib.Actions.WaitAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="228" i:nil="true" />
                   <Frames xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">60</Frames>
                   <Minutes xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">0.033333333333333333</Minutes>
                   <Seconds xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">2</Seconds>
                   <Time xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">PT2S</Time>
                 </TriggerLogic>
-                <TriggerLogic z:Id="281" z:Type="CMissionLib.Actions.DefeatAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="282">Defeat</Name>
+                <TriggerLogic z:Id="298" z:Type="CMissionLib.Actions.DefeatAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="299">Defeat</Name>
                 </TriggerLogic>
-                <TriggerLogic z:Id="283" z:Type="CMissionLib.Actions.LeaveCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="284">Leave Cutscene</Name>
+                <TriggerLogic z:Id="300" z:Type="CMissionLib.Actions.LeaveCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="301">Leave Cutscene</Name>
                   <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
                 </TriggerLogic>
               </_items>
               <_size>8</_size>
               <_version>12</_version>
             </items>
-            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="285">
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="302">
               <d7p1:_busyCount>0</d7p1:_busyCount>
             </_monitor>
           </Logic>
           <MaxOccurrences>1</MaxOccurrences>
-          <Name z:Id="286">Elsior Destroyed</Name>
+          <Name z:Id="303">Elsior Destroyed</Name>
           <Probability>1</Probability>
         </Trigger>
-        <Trigger z:Id="287">
+        <Trigger z:Id="304">
           <Enabled>true</Enabled>
           <Folder i:nil="true" />
           <IsExpanded>true</IsExpanded>
-          <Logic z:Id="288">
-            <items z:Id="289" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
-              <_items z:Id="290" z:Size="4">
-                <TriggerLogic z:Id="291" z:Type="CMissionLib.Conditions.UnitDestroyedCondition" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="292">Unit Destroyed</Name>
-                  <Groups xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="293" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Conditions">
-                    <d10p1:items z:Id="294" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
-                      <d10p1:_items z:Id="295" z:Size="4">
+          <Logic z:Id="305">
+            <items z:Id="306" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="307" z:Size="4">
+                <TriggerLogic z:Id="308" z:Type="CMissionLib.Conditions.UnitDestroyedCondition" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="309">Unit Destroyed</Name>
+                  <Groups xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="310" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Conditions">
+                    <d10p1:items z:Id="311" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+                      <d10p1:_items z:Id="312" z:Size="4">
                         <d10p1:string z:Ref="76" i:nil="true" />
                         <d10p1:string i:nil="true" />
                         <d10p1:string i:nil="true" />
@@ -1155,39 +1207,174 @@ Spring.DestroyUnit(elsiorID, true)</CodeStr>
                       <d10p1:_size>1</d10p1:_size>
                       <d10p1:_version>1</d10p1:_version>
                     </d10p1:items>
-                    <d10p1:_monitor xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="296">
+                    <d10p1:_monitor xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="313">
                       <d11p1:_busyCount>0</d11p1:_busyCount>
                     </d10p1:_monitor>
                   </Groups>
                 </TriggerLogic>
-                <TriggerLogic z:Id="297" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="298">Custom Action (Alternate)</Name>
-                  <CodeStr z:Id="299" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Spring.SetGameRulesParam("gameOver", 1)</CodeStr>
+                <TriggerLogic z:Id="314" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="315">Custom Action (Alternate)</Name>
+                  <CodeStr z:Id="316" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Spring.SetGameRulesParam("gameOver", 1)</CodeStr>
                   <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Synced>
                 </TriggerLogic>
-                <TriggerLogic z:Id="300" z:Type="CMissionLib.Actions.DefeatAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                  <Name z:Id="301">Defeat</Name>
+                <TriggerLogic z:Id="317" z:Type="CMissionLib.Actions.DefeatAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="318">Defeat</Name>
                 </TriggerLogic>
                 <TriggerLogic i:nil="true" />
               </_items>
               <_size>3</_size>
               <_version>5</_version>
             </items>
-            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="302">
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="319">
               <d7p1:_busyCount>0</d7p1:_busyCount>
             </_monitor>
           </Logic>
           <MaxOccurrences>1</MaxOccurrences>
-          <Name z:Id="303">Elsior Destroyed Fast</Name>
+          <Name z:Id="320">Elsior Destroyed Fast</Name>
+          <Probability>1</Probability>
+        </Trigger>
+        <Trigger z:Id="321">
+          <Enabled>true</Enabled>
+          <Folder i:nil="true" />
+          <IsExpanded>true</IsExpanded>
+          <Logic z:Id="322">
+            <items z:Id="323" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="324" z:Size="4">
+                <TriggerLogic z:Id="325" z:Type="CMissionLib.Actions.StopCutsceneActionsAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="326">Stop Cutscene Actions</Name>
+                  <CutsceneID z:Id="327" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Current Cutscene</CutsceneID>
+                </TriggerLogic>
+                <TriggerLogic z:Id="328" z:Type="CMissionLib.Actions.ExecuteTriggersAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Ref="207" i:nil="true" />
+                  <Triggers xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="329" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">
+                    <d10p1:items z:Id="330" z:Type="System.Collections.Generic.List`1[[CMissionLib.INamed, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+                      <d10p1:_items z:Id="331" z:Size="4">
+                        <d10p1:anyType z:Ref="211" i:nil="true" />
+                        <d10p1:anyType i:nil="true" />
+                        <d10p1:anyType i:nil="true" />
+                        <d10p1:anyType i:nil="true" />
+                      </d10p1:_items>
+                      <d10p1:_size>1</d10p1:_size>
+                      <d10p1:_version>3</d10p1:_version>
+                    </d10p1:items>
+                    <d10p1:_monitor xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="332">
+                      <d11p1:_busyCount>0</d11p1:_busyCount>
+                    </d10p1:_monitor>
+                  </Triggers>
+                </TriggerLogic>
+                <TriggerLogic z:Id="333" z:Type="CMissionLib.Conditions.CutsceneSkippedCondition" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="334">Cutscene Skipped</Name>
+                  <CutsceneID z:Ref="180" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Conditions" />
+                </TriggerLogic>
+                <TriggerLogic i:nil="true" />
+              </_items>
+              <_size>3</_size>
+              <_version>5</_version>
+            </items>
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="335">
+              <d7p1:_busyCount>0</d7p1:_busyCount>
+            </_monitor>
+          </Logic>
+          <MaxOccurrences>1</MaxOccurrences>
+          <Name z:Id="336">Intro Skipped</Name>
+          <Probability>1</Probability>
+        </Trigger>
+        <Trigger z:Id="337">
+          <Enabled>true</Enabled>
+          <Folder i:nil="true" />
+          <IsExpanded>true</IsExpanded>
+          <Logic z:Id="338">
+            <items z:Id="339" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="340" z:Size="8">
+                <TriggerLogic z:Id="341" z:Type="CMissionLib.Actions.StopCutsceneActionsAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="342">Stop Cutscene Actions</Name>
+                  <CutsceneID z:Id="343" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Current Cutscene</CutsceneID>
+                </TriggerLogic>
+                <TriggerLogic z:Id="344" z:Type="CMissionLib.Conditions.CutsceneSkippedCondition" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="345">Cutscene Skipped</Name>
+                  <CutsceneID z:Ref="290" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Conditions" />
+                </TriggerLogic>
+                <TriggerLogic z:Id="346" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="347">Custom Action (Alternate)</Name>
+                  <CodeStr z:Id="348" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">local elsiorID = GG.mission.FindUnitInGroup("Elsior")
+Spring.DestroyUnit(elsiorID, true)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="349" z:Type="CMissionLib.Actions.DefeatAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="350">Defeat</Name>
+                </TriggerLogic>
+                <TriggerLogic z:Id="351" z:Type="CMissionLib.Actions.LeaveCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="352">Leave Cutscene</Name>
+                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
+                </TriggerLogic>
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+              </_items>
+              <_size>5</_size>
+              <_version>9</_version>
+            </items>
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="353">
+              <d7p1:_busyCount>0</d7p1:_busyCount>
+            </_monitor>
+          </Logic>
+          <MaxOccurrences>1</MaxOccurrences>
+          <Name z:Id="354">Defeat Skipped</Name>
+          <Probability>1</Probability>
+        </Trigger>
+        <Trigger z:Id="355">
+          <Enabled>true</Enabled>
+          <Folder i:nil="true" />
+          <IsExpanded>true</IsExpanded>
+          <Logic z:Id="356">
+            <items z:Id="357" z:Type="System.Collections.Generic.List`1[[CMissionLib.TriggerLogic, CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+              <_items z:Id="358" z:Size="8">
+                <TriggerLogic z:Id="359" z:Type="CMissionLib.Actions.StopCutsceneActionsAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="360">Stop Cutscene Actions</Name>
+                  <CutsceneID z:Id="361" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">Current Cutscene</CutsceneID>
+                </TriggerLogic>
+                <TriggerLogic z:Id="362" z:Type="CMissionLib.Conditions.CutsceneSkippedCondition" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="363">Cutscene Skipped</Name>
+                  <CutsceneID z:Ref="269" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Conditions" />
+                </TriggerLogic>
+                <TriggerLogic z:Id="364" z:Type="CMissionLib.Actions.CustomAction2" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="365">Custom Action (Alternate)</Name>
+                  <CodeStr z:Id="366" xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">WG.Music.StopTrack(true)</CodeStr>
+                  <Synced xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">true</Synced>
+                </TriggerLogic>
+                <TriggerLogic z:Id="367" z:Type="CMissionLib.VictoryAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="368">Victory</Name>
+                </TriggerLogic>
+                <TriggerLogic z:Id="369" z:Type="CMissionLib.Actions.LeaveCutsceneAction" z:Assembly="CMissionLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+                  <Name z:Id="370">Leave Cutscene</Name>
+                  <Instant xmlns="http://schemas.datacontract.org/2004/07/CMissionLib.Actions">false</Instant>
+                </TriggerLogic>
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+                <TriggerLogic i:nil="true" />
+              </_items>
+              <_size>5</_size>
+              <_version>15</_version>
+            </items>
+            <_monitor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="371">
+              <d7p1:_busyCount>0</d7p1:_busyCount>
+            </_monitor>
+          </Logic>
+          <MaxOccurrences>1</MaxOccurrences>
+          <Name z:Id="372">Victory Skipped</Name>
           <Probability>1</Probability>
         </Trigger>
         <Trigger i:nil="true" />
         <Trigger i:nil="true" />
+        <Trigger i:nil="true" />
+        <Trigger i:nil="true" />
+        <Trigger i:nil="true" />
+        <Trigger i:nil="true" />
       </_items>
-      <_size>6</_size>
-      <_version>6</_version>
+      <_size>10</_size>
+      <_version>14</_version>
     </items>
-    <_monitor xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="304">
+    <_monitor xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel" z:Id="373">
       <d3p1:_busyCount>0</d3p1:_busyCount>
     </_monitor>
   </Triggers>

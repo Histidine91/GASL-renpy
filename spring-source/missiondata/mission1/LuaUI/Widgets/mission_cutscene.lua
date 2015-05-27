@@ -4,7 +4,7 @@
 function widget:GetInfo()
   return {
     name      = "Cutscenes",
-    desc      = "v0.5 Letterboxes and camera control for cutscenes",
+    desc      = "v0.6 Letterboxes and camera control for cutscenes",
     author    = "KingRaptor (L.J. Lim)",
     date      = "2012.10.25",
     license   = "GNU GPL, v2 or later",
@@ -46,6 +46,8 @@ local isFadingIn = false
 local isFadingOut = false
 local screenFadeAlpha = 0
 local showCameraScreen = false
+local isSkippable = false
+local displaySkipMessage = false
 local camState = spGetCameraState()
 local posCamDataX = vsx*0.85
 local posCamDataY = vsy*0.3
@@ -68,8 +70,11 @@ local ARROW_KEYS = {
 }
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-local function EnterCutscene(instant)
+local function EnterCutscene(instant, skippable)
+  local wasInCutscene = isInCutscene
   isInCutscene = true
+  isSkippable = skippable
+  spWarpMouse(vsx/2, vsy/2)
   WG.HideGUI()
   local paused = select(3, Spring.GetGameSpeed())
   if paused then
@@ -78,15 +83,17 @@ local function EnterCutscene(instant)
   Spring.SelectUnitArray({})
   
   -- set view settings to remove gameplay-oriented stuff
-  lastIconDist = Spring.GetConfigInt("UnitIconDist", 150)
-  Spring.SendCommands("disticon " .. 1000)
-  --useEdgeScroll = Spring.GetConfigInt("WindowedEdgeMove", 1)
-  --Spring.SetConfigInt( "WindowedEdgeMove", 0 )
-  local drawMode = spGetMapDrawMode()
-  if drawMode ~= "normal" then
-    local cmd = DRAW_MODE_COMMANDS[drawMode]
-    Spring.SendCommands(cmd)
-    lastDrawMode = drawMode
+  if not wasInCutscene then
+    lastIconDist = Spring.GetConfigInt("UnitIconDist", 150)
+    Spring.SendCommands("disticon " .. 1000)
+    useEdgeScroll = Spring.GetConfigInt("WindowedEdgeMove", 1)
+    Spring.SetConfigInt( "WindowedEdgeMove", 0 )
+    local drawMode = spGetMapDrawMode()
+    if drawMode ~= "normal" then
+      local cmd = DRAW_MODE_COMMANDS[drawMode]
+      Spring.SendCommands(cmd)
+      lastDrawMode = drawMode
+    end
   end
   
   if instant then
@@ -109,11 +116,12 @@ local function RestoreFromCutscene()
     Spring.SendCommands(cmd)
   end
   Spring.SendCommands("disticon " .. lastIconDist)
-  --Spring.SetConfigInt( "WindowedEdgeMove", useEdgeScroll )
+  Spring.SetConfigInt( "WindowedEdgeMove", useEdgeScroll )
   WG.UnhideGUI()
 end
 
 local function LeaveCutscene(instant)
+  isSkippable = false
   if instant then
     RestoreFromCutscene()
   else
@@ -229,6 +237,26 @@ local function FadeIn(instant)
   end
 end
 
+local function HandlePause(guiHidden)
+  local paused = select(3, Spring.GetGameSpeed())
+  
+  Spring.SelectUnitMap({})
+  if (guiHidden and (not paused)) then
+    WG.UnhideGUI()
+    Spring.SendCommands("pause")
+  elseif ((not guiHidden) and paused) then
+    WG.HideGUI()
+    if Spring.IsGUIHidden() then
+      Spring.SendCommands("hideinterface")
+    end
+    Spring.SendCommands("pause")
+  elseif guiHidden and paused then
+    WG.UnhideGUI()
+  elseif (not guiHidden) and (not paused) then
+    Spring.SendCommands("pause")
+  end
+end
+
 local function SetDrawCameraScreen(bool)
   showCameraScreen = bool
 end
@@ -284,46 +312,52 @@ end
 
 -- block all keypresses that aren't pause or Esc while in cutscene
 function widget:KeyPress(key, modifier, isRepeat)
-  if isInCutscene then
-    local guiHidden = WG.IsGUIHidden()
-    local paused = select(3, Spring.GetGameSpeed())
+  local guiHidden = WG.IsGUIHidden()
+  if isInCutscene and (Spring.GetGameFrame() > 0) then
     if key == KEYSYMS.PAUSE or key == KEYSYMS.ESCAPE then
-      Spring.SelectUnitMap({})
-      if (guiHidden and (not paused)) then
-        WG.UnhideGUI()
-        Spring.SendCommands("pause")
-      elseif ((not guiHidden) and paused) then
-        WG.HideGUI()
-        Spring.SendCommands("pause")
-      elseif guiHidden and paused then
-        WG.UnhideGUI()
-      elseif (not guiHidden) and (not paused) then
-        Spring.SendCommands("pause")
-      end
+      HandlePause(guiHidden)
       return false
-    elseif key == KEYSYMS.F5 then
-      return true
+    elseif key == KEYSYMS.SPACE and isSkippable then
+      return true -- pass to KeyRelease
     elseif ARROW_KEYS[key] then
       return not (WG.COFC and (WG.COFC.GetThirdPersonTrackUnit ~= nil))
-    else
-      -- allow screenshots
-      local keystr = Spring.GetKeySymbol(key)
-      local keybinds = Spring.GetKeyBindings(keystr) or {}
-      for i=1,#keybinds do
-        for key in pairs(keybinds[i]) do
-          if key == "screenshot" then
-            return false
-          end
+    end
+    
+    -- allow screenshots
+    local keystr = Spring.GetKeySymbol(key)
+    local keybinds = Spring.GetKeyBindings(keystr) or {}
+    for i=1,#keybinds do
+      for key in pairs(keybinds[i]) do
+        local lowerkey = key:lower()
+        if lowerkey == "screenshot" then --or key:lower() == "hideinterface"
+          return false
+        elseif lowerkey == "crudemenu" or lowerkey == "pause" then
+          HandlePause(guiHidden)
+          return false
         end
       end
     end
+    
     return guiHidden -- eat the keypress if appropriate (so nobody can use it)
   end
   return false
 end
 
+function widget:KeyRelease(key, modifier, isRepeat)
+  if key == KEYSYMS.SPACE and isSkippable then
+    if displaySkipMessage or (not WG.IsGUIHidden()) then
+      Spring.SendLuaRulesMsg("skipCutscene")
+      displaySkipMessage = false
+      return true
+    else
+      displaySkipMessage = true
+    end
+  end
+  return false
+end
+
 function widget:MousePress(x,y,button)
-  if isInCutscene and WG.IsGUIHidden() and button ~= 2 then
+  if isInCutscene and WG.IsGUIHidden() then
     return true -- eat the mousepress
   end
   return false
@@ -331,7 +365,7 @@ end
 
 function widget:MouseWheel()
   if isInCutscene and WG.IsGUIHidden() then
-    --return true
+    return true
   end
   return false
 end
@@ -352,6 +386,10 @@ function widget:DrawScreenEffects()
     glRect(0, vsy, vsx, 0)
     glColor(1,1,1,1)
   end
+  if isInCutscene and isSkippable and (displaySkipMessage or (not WG.IsGUIHidden()) ) then
+    gl.Translate(vsx * 0.75, vsy * LETTERBOX_BOUNDARY/2, 0)
+    gl.Text("SPACE: Skip", 0, 0, 20, "O")
+  end  
 end
 
 function widget:ViewResize(viewSizeX, viewSizeY)
