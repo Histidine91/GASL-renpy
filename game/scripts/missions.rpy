@@ -7,6 +7,8 @@
 # ============================================================
 # data definitions
 init python:
+    import os
+    
     unitLists = {
         "mission1_milfeulle":[
             {"type":"emblemframe", "xpos":0.495, "ypos":0.735, "heading":315, "number":1},
@@ -114,16 +116,31 @@ init python:
         except:
             print("Warning: failed to delete results file(s)")
             print("File may already not exist, or may be in use")
+            
+    def writeEnvVars():
+        s = ""
+        d = dict(os.environ)
+        for key, value in sorted(d.items()):
+            s += key + "=" + value + "\n"
+        testFile = open(SPRING_DIR + "/envVars.txt", 'w');
+        testFile.write(s)
+        testFile.close()
 
 label run_spring(missionName):
     $ location = None
     stop music fadeout 1
     scene bg blank with fadeSlow
     
+    $ writeEnvVars()
+    
     while True:
-        $ removeResultFiles()
-        $ writeStartscript(missionName)
-        $ subprocess.call([EXECUTABLE_PATH, SCRIPT_PATH_TEMP])
+        python:
+            removeResultFiles()
+            writeStartscript(missionName)
+            #envVars = dict(os.environ.copy())
+            if "SDL_VIDEODRIVER" in os.environ:
+                del os.environ["SDL_VIDEODRIVER"]
+            subprocess.call([EXECUTABLE_PATH, SCRIPT_PATH_TEMP])
     
         # parse results
         # for some reason this breaks when moved to its own function >:|
