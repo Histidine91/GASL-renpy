@@ -140,7 +140,7 @@ label run_spring(missionName):
             #envVars = dict(os.environ.copy())
             if "SDL_VIDEODRIVER" in os.environ:
                 del os.environ["SDL_VIDEODRIVER"]
-            subprocess.call([EXECUTABLE_PATH, SCRIPT_PATH_TEMP])
+            subprocess.call([EXECUTABLE_PATH, SCRIPT_PATH_TEMP, "--isolation"])
     
         # parse results
         # for some reason this breaks when moved to its own function >:|
